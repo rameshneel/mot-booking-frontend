@@ -1,14 +1,14 @@
 import axios from "axios";
 
 export const publicApi = axios.create({
-  baseURL: "http://localhost:3000/api",
-  // baseURL: "https://in.prelaunchserver.com/ferndale-autos/api",
+  // baseURL: "http://localhost:3000/api",
+  baseURL: "https://in.prelaunchserver.com/mot-booking/api",
   withCredentials: true,
   timeout: 120000,
 });
 export const privateApi = axios.create({
-  baseURL: "http://localhost:3000/api",
-  // baseURL: "https://in.prelaunchserver.com/ferndale-autos/api",
+  // baseURL: "http://localhost:3000/api",
+  baseURL: "https://in.prelaunchserver.com/mot-booking/api",
   withCredentials: true,
   timeout: 120000,
 });
