@@ -86,7 +86,7 @@ const DashboardLayout = () => {
     <>
       <div className="p-6 flex justify-between items-center">
         <h1 className="text-2xl font-semibold tracking-wide text-teal-400">
-          <img src={logo} alt="logo" className="w-48 pt-4 rounded-full" />
+          <img src={logo} alt="logo" className="w-48 pt-4" />
           {/* <h1 className="w-48 pt-4">YOUR lOGO</h1> */}
         </h1>
         <button
