@@ -108,25 +108,14 @@ const Booking = () => {
         Cell: ({ value }) => `£${value}`,
       },
       {
-        Header: "Class",
-        accessor: "classSelection",
+        Header: "Payment",
+        accessor: "paymentMethod",
         sortType: "basic",
         Cell: ({ value }) => {
           if (!value) {
             return "N/A";
           }
-
-          // Match the pattern of text followed by a number (e.g., "class4" or "class7")
-          const match = value.trim().match(/^([a-zA-Z]+)(\d+)$/);
-
-          if (match) {
-            // Capitalize the first letter of the text part and append the number
-            return `${match[1].charAt(0).toUpperCase() + match[1].slice(1)} ${
-              match[2]
-            }`;
-          }
-
-          return value; // In case the format is different, return the value as is
+          return value;
         },
       },
 
