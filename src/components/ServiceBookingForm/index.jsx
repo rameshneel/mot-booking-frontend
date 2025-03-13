@@ -186,10 +186,10 @@ const BookingForm = () => {
       const response = await checkCustomer(formData);
       if (response.data.success) {
         setPayMentModalOpen(true);
-        toast.success("Booking details verified!", {
-          position: "top-center",
-          autoClose: 2000,
-        });
+        // toast.success("Booking details verified!", {
+        //   position: "top-center",
+        //   autoClose: 2000,
+        // });
       } else {
         toast.error(response.data.message);
       }
